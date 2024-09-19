@@ -17,7 +17,7 @@
               <div class="artboard artboard-demo phone-3">
                 <div class="stats shadow">
                     <div class="stat">
-                        <div class="stat-vlaue">100000</div>  
+                        <div id="currentBalance" class="stat-vlaue">2500</div>  
                         <div class="stat-description">Net Balance</div>
                     </div>
 
@@ -27,28 +27,28 @@
                     <button class="btn btn-lg">Add Money</button>
                     <button class="btn btn-lg">Cash Out</button>
                 </div>
-                <div class="divider">
-                    <form class="card-body">
-                        <div class="form-control">
-                          <label class="label">
-                            <span class="label-text">Amount</span>
-                          </label>
-                          <input type="text" placeholder="Amount" class="input input-bordered" required />
-                        </div>
-                        <div class="form-control">
-                          <label class="label">
-                            <span class="label-text">Pin</span>
-                          </label>
-                          <input type="password" placeholder="Pin" class="input input-bordered" autocomplete="off" required />
-                        </div>
-                        <div class="form-control mt-6">
-                          <button class="btn btn-primary">Add Money</button>
-                        </div>
-                      </form>
-                </div>
+                <div class="divider"></div>
+                <form class="card-body">
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Amount</span>
+                      </label>
+                      <input id="addAmount" type="text" placeholder="Amount" class="input input-bordered" required />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Pin</span>
+                      </label>
+                      <input id="pinNum" type="password" placeholder="Pin Number" class="input input-bordered" autocomplete="off" required />
+                    </div>
+                    <div class="form-control mt-6">
+                      <button id="addBtn" class="btn btn-primary">Add Money</button>
+                    </div>
+                  </form>
               </div>
             </div>
           </div>
     </main>
+    <script src="./JS/home.js"></script>
 </body>
 </html>
